@@ -164,5 +164,6 @@ def test_workflow_completed_records_appear_in_product_workflow(product_url):
 @allure.title('Check that the entire workflow completes in 180 sec')
 @pytest.mark.timeout(180)
 def test_workflow_efficiency(upload_file_to_aws):
+	''' Test to check complete workflow'''
 	test_workflow_completed_records_appear_in_product_workflow(prop.mock_product_url_completed)
 
