@@ -1,0 +1,602 @@
+{
+	"info": {
+		"_postman_id": "64a4dad0-c139-431a-9b1b-5080c308a2e1",
+		"name": "ED",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26788707"
+	},
+	"item": [
+		{
+			"name": "ED_catalog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://63e18a5565b57fe6065a0fe6.mockapi.io/input",
+					"protocol": "https",
+					"host": [
+						"63e18a5565b57fe6065a0fe6",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"input"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ED_catalog_example_1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://63e18a5565b57fe6065a0fe6.mockapi.io/input",
+							"protocol": "https",
+							"host": [
+								"63e18a5565b57fe6065a0fe6",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"input"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,PUT,POST,DELETE,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "631"
+						},
+						{
+							"key": "Etag",
+							"value": "\"1242815483\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 18:56:52 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1000,\n        \"status\": \"ingesting\"\n    },\n    {\n        \"id\": 1001,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 1002,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 1003,\n        \"status\": \"ingesting\"\n    },\n    {\n        \"id\": 2000,\n        \"status\": \"failed\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Mock_catalog_input_complete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MockServerURL}}/input_complete",
+					"host": [
+						"{{MockServerURL}}"
+					],
+					"path": [
+						"input_complete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mock_catalog_complete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://63e18a5565b57fe6065a0fe6.mockapi.io/input_complete",
+							"protocol": "https",
+							"host": [
+								"63e18a5565b57fe6065a0fe6",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"input_complete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,PUT,POST,DELETE,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11"
+						},
+						{
+							"key": "Etag",
+							"value": "\"1592724850\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 19:06:48 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"id\": 1000,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 1001,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 1002,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 1003,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 2000,\r\n        \"status\": \"failed\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "Mock_catalog_input_incomplete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MockServerURL}}/input_incomplete",
+					"host": [
+						"{{MockServerURL}}"
+					],
+					"path": [
+						"input_incomplete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mock_catalog_incomplete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://63e18a5565b57fe6065a0fe6.mockapi.io/input_incomplete",
+							"protocol": "https",
+							"host": [
+								"63e18a5565b57fe6065a0fe6",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"input_incomplete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,PUT,POST,DELETE,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11"
+						},
+						{
+							"key": "Etag",
+							"value": "\"1592724850\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 19:06:48 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"id\": 1000,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 1001,\r\n        \"status\": \"ingesting\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 1002,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 1003,\r\n        \"status\": \"complete\",\r\n        \"assets\": [\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog.png\",\r\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-catalog-metadata.json\"\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 2000,\r\n        \"status\": \"failed\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "ED_product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://63e18a5565b57fe6065a0fe6.mockapi.io/product",
+					"protocol": "https",
+					"host": [
+						"63e18a5565b57fe6065a0fe6",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ED_product_example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://63e18a5565b57fe6065a0fe6.mockapi.io/product",
+							"protocol": "https",
+							"host": [
+								"63e18a5565b57fe6065a0fe6",
+								"mockapi",
+								"io"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,PUT,POST,DELETE,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "336"
+						},
+						{
+							"key": "Etag",
+							"value": "\"-461555380\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Apr 2023 03:24:21 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10000,\n        \"input_id\": 1000,\n        \"status\": \"processing\"\n    },\n    {\n        \"id\": 10001,\n        \"input_id\": 1001,\n        \"status\": \"processing\"\n    },\n    {\n        \"id\": 10002,\n        \"input_id\": 1002,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 10003,\n        \"input_id\": 1003,\n        \"status\": \"processing\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Mock_product_complete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MockServerURL}}/product_complete",
+					"host": [
+						"{{MockServerURL}}"
+					],
+					"path": [
+						"product_complete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mock_product_complete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{MockServerURL}}/product_complete",
+							"host": [
+								"{{MockServerURL}}"
+							],
+							"path": [
+								"product_complete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Apr 2023 03:26:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "462"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=3c25c12d83ac4eaa"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=681f6c175eed212b"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1681010855"
+						},
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,PUT,POST,DELETE,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+						},
+						{
+							"key": "Etag",
+							"value": "\"-461555380\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10000,\n        \"input_id\": 1000,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 10001,\n        \"input_id\": 1001,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 10002,\n        \"input_id\": 1002,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 10003,\n        \"input_id\": 1003,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Mock_product_incomplete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MockServerURL}}/product_incomplete",
+					"host": [
+						"{{MockServerURL}}"
+					],
+					"path": [
+						"product_incomplete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mock_product_incomplete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{MockServerURL}}/product_incomplete",
+							"host": [
+								"{{MockServerURL}}"
+							],
+							"path": [
+								"product_incomplete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Apr 2023 03:26:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "462"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=3c25c12d83ac4eaa"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=681f6c175eed212b"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1681010855"
+						},
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,PUT,POST,DELETE,OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,Content-Type,Cache-Control,access_token"
+						},
+						{
+							"key": "Etag",
+							"value": "\"-461555380\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10000,\n        \"input_id\": 1000,\n        \"status\": \"processing\"\n    },\n    {\n        \"id\": 10001,\n        \"input_id\": 1001,\n        \"status\": \"processing\"\n    },\n    {\n        \"id\": 10002,\n        \"input_id\": 1002,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    },\n    {\n        \"id\": 10003,\n        \"input_id\": 1003,\n        \"status\": \"complete\",\n        \"assets\": [\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product.png\",\n            \"https://urthecast-updev-jcheung-sandbox.s3.amazonaws.com/sdet-takehome-assignment/eda-sample-product-metadata.json\"\n        ]\n    }\n]"
+				}
+			]
+		}
+	]
+}
