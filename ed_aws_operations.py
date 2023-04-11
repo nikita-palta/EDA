@@ -10,7 +10,6 @@ client = boto3.client('s3',
                       aws_secret_access_key='')
 
 class ed_aws_operations:
-	# def connect_s3(self):
 	'''Function to get all the buckets from S3'''
 	def get_bucket_list(self):
 		for bucket in s3.buckets.all():
