@@ -9,7 +9,7 @@ from properties import properties as prop
 
 
 class ed_general_operations:
-
+	'''Function to get api response and validate the response code'''
 	def get_api_response(self, url):
 		failures = []
 		response = (requests.get(url))
@@ -19,6 +19,8 @@ class ed_general_operations:
 			failures.append(f"Error retrieving data from {url}. Status code: {response.status_code}")
 		return response, failures
 
+
+	'''Compare status of each record against previous status to check if work is complete'''
 	def compare_record_status(self, prev_result, current_result, complete_status_labels, incomplete_status_labels):
 		workflow_complete = []
 		workflow_incomplete = []
@@ -37,6 +39,7 @@ class ed_general_operations:
 		else:
 			return (False, message, workflow_complete, workflow_incomplete)
 
+	'''Get the status of job after retry interval and conclude if work status is complete'''
 	def get_and_conclude_work_status(self, url, initial_response, complete_status_labels, incomplete_status_labels,
 	                                 work):
 		failures = []
@@ -68,6 +71,7 @@ class ed_general_operations:
 			failures.append(f'{work} work status did not complete in {retry_count - 1} retries')
 		return status, failures, completed_id_list, incomplete_id_list, current_response
 
+	'''Check each completed record has associated asset and populate assets for subsequent steps'''
 	def check_and_get_assets(self,response):
 		failures = []
 		asset_details = {}
@@ -80,6 +84,7 @@ class ed_general_operations:
 					asset_details[id] = assets
 		return failures,asset_details
 
+	'''Download the assets to a local directory'''
 	def download_assets(self,asset_details):
 		failures = []
 		print(type(asset_details))

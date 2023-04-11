@@ -2,7 +2,7 @@ import json
 
 
 class ed_product_requests:
-
+	'''Parse the json to dictionary for subsequent use'''
 	def get_dict_from_json_product(self, json_input):
 		data = json.loads(json_input)
 		result = {}
