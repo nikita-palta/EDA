@@ -65,7 +65,7 @@ class ed_general_operations:
 				else:
 					break
 		if status == False:
-			failures.append(f'{work} work status did not complete in {retry_count} retries')
+			failures.append(f'{work} work status did not complete in {retry_count - 1} retries')
 		return status, failures, completed_id_list, incomplete_id_list, current_response
 
 	def check_and_get_assets(self,response):

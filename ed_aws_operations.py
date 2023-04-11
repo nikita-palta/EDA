@@ -6,17 +6,17 @@ from botocore.exceptions import ClientError
 
 s3 = boto3.resource("s3")
 client = boto3.client('s3',
-                      aws_access_key_id='AKIA6KJSLQOPPY5MKU55',
-                      aws_secret_access_key='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')
-
+                      aws_access_key_id='',
+                      aws_secret_access_key='')
 
 class ed_aws_operations:
 	# def connect_s3(self):
-
+	'''Function to get all the buckets from S3'''
 	def get_bucket_list(self):
 		for bucket in s3.buckets.all():
 			print(bucket.name)
 
+	'''Function to upload a file to the given S3 bucket'''
 	def upload_file_to_s3(self, bucket_name, file_name, object_name=None):
 		# If S3 object_name was not specified, use file_name
 		if object_name is None:
